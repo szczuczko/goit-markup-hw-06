@@ -1,1 +1,1 @@
-https://szczuczko.github.io/goit-markup-hw-05/
+https://szczuczko.github.io/goit-markup-hw-06/
