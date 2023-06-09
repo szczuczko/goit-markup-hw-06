@@ -677,7 +677,7 @@ footer {
   text-decoration: underline solid var(--blue);
 }
 
-.singup-label {
+.singup-input {
   box-sizing: border-box;
   color: var(--white);
   width: 358px;
