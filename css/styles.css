@@ -239,6 +239,7 @@ h1:hover {
   text-decoration: underline solid var(--button-blue);
 }
 
+/*Okno modalne*/
 .modal {
   position: fixed;
   top: 0;
@@ -265,6 +266,18 @@ h1:hover {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.modal-content p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  padding-top: 40px;
+}
+
 .modal-close-button {
   position: absolute;
   top: 8px;
@@ -285,10 +298,127 @@ h1:hover {
   width: 60%;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.1.1666em;
+  letter-spacing: 0.01em;
+  color: var(--gray);
+  margin: 12px 0 0 40px;
+  gap: 10px;
+}
+
+.modal-form input {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
+}
+
+.modal-name:hover,
+.modal-phone:hover,
+.modal-email:hover,
+.modal-text:hover,
+textarea:hover,
+.modal-privacy:hover {
+  text-decoration: underline solid var(--blue);
+}
+
+.modal-form input:hover,
+textarea:hover {
+  border: 1px solid var(--blue);
+}
+
+.modal-privacy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-privacy input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+}
+
+.modal-submit-button {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.modal-submit-button button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.icon-mod-name,
+.icon-mod-phone,
+.icon-mod-mail {
+  position: absolute;
+  transform: translate(10px, -30px);
+  width: 20px;
+  height: 20px;
+}
+
+.modal-name:hover .icon-mod-name {
+  fill: var(--blue);
+}
+
+.modal-phone:hover .icon-mod-phone {
+  fill: var(--blue);
+}
+
+.modal-email:hover .icon-mod-mail {
+  fill: var(--blue);
+}
+
 .is-hidden {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+}
+
+.modal-content p:hover {
+  text-decoration: underline solid var(--blue);
+}
+
+.modal-content:hover,
+.modal-close-button:hover {
+  border: 1px solid var(--blue);
+}
+
+.modal-close-button:hover .close-icon {
+  fill: var(--blue);
 }
 
 /* Pierwsza sekcja */
